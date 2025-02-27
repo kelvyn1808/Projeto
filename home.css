@@ -1,0 +1,51 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 30px 150px;
+    color: aliceblue;
+    background-color:  #454646;
+
+/* Estilizando a container */
+.container {
+    display: flex;
+    align-items: center;  /* Centraliza verticalmente o conteúdo */
+    justify-content: space-between;  /* Deixa os elementos com espaço entre eles */
+    padding: 30px 150px;
+}
+
+/* Estilizando o ladoesquerdo */
+.ladoesquerdo {
+    max-width: 50%; /* Limita a largura do lado esquerdo para metade da tela */
+}
+
+/* Espaço entre o parágrafo e o botão */
+.ladoesquerdo p {
+    margin-bottom: 20px; /* Adiciona espaço de 20px abaixo do parágrafo */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Adicionando mais espaço entre o botão e o parágrafo */
+.ladoesquerdo button {
+    padding: 10px 20px; /* Ajusta o tamanho do botão */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Borda arredondada */
+    margin-top: 10px; /* Espaço de 10px entre o botão e o parágrafo */
+    transition: 1s;
+}
+
+.ladoesquerdo button:hover {
+    background-color: #0056b3; /* Cor de fundo quando o botão é hover */
+
+}
+
+/* Estilizando a imagem */
+.container img {
+    max-width: 40%; /* Limita a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border: black solid 4px;
+}
+    }

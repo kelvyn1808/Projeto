@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  /* Estilo para o container do filme */
+  .filme1 {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url("./fundoBatman.png");
+    background-size: cover; /* Garantindo que a imagem cubra todo o fundo */
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adicionando sombra */
+  }
+
+  /* Estilo para o título */
+  h1 {
+    text-align: center;
+    color: #fff; /* Cor mais forte para contraste */
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  /* Estilo para as imagens e descrição */
+  .batman {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .batman img {
+    max-width: 100%; /* Ajustando para ocupar toda a largura disponível */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .batman .p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333; /* Texto mais escuro para melhor leitura */
+    margin-right: 20px;
+    flex: 1;
+    min-width: 200px; /* Garantindo um tamanho mínimo para o texto */
+  }
+
+  /* Estilo para os botões */
+  .b {
+    background-color: #000;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+    text-align: center; /* Garantindo que o texto do botão fique centralizado */
+  }
+
+  .b:hover {
+    background-color: #333;
+  }
+
+  /* Media query para dispositivos móveis */
+  @media (max-width: 768px) {
+    .batman {
+      flex-direction: column; /* Alinhamento em coluna para telas menores */
+      text-align: center;
+    }
+
+    .batman img {
+      max-width: 80%; /* Imagens podem ocupar 80% da largura */
+    }
+
+    .batman .p {
+      font-size: 1rem; /* Reduzindo o tamanho do texto em dispositivos menores */
+      margin-right: 0;
+    }
+}

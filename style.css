@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.cabecalho {
+    background-color: #4e81a1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+    border: black solid 4px;
+
+    & .nav{
+        display: flex;
+        gap: 30px;
+
+    }
+    & a {
+        color: black;
+        font-size: 24px;
+        text-decoration: underline;
+        transition: all 0.3s ease; /* Adiciona uma transição suave */
+        }
+    
+        .sobre:hover, .filmes:hover, .series:hover, .games:hover, .hq:hover {
+            color: rgb(137, 255, 243); /* Altera a cor do texto quando o mouse passar sobre ele */
+            text-decoration: none; /* Remove o sublinhado quando o mouse passa sobre o texto */
+        }
+        & .barra{
+            display: flex;
+            gap: 10px;
+            
+
+
+
+        }
+        .q{
+            border: black solid 2px;
+        }
+        .botao{
+            padding: 5px 8px;
+            font-size: 12px;
+            background-color: #fbfefb; /* Cor de fundo */
+            border: black 2px;
+        }
+        .botao:hover{
+            padding: 5px 8px; /* Alterar o espaçamento interno */
+            font-size: 12px;    /* Tamanho da fonte */
+            border: black 2px;       /* Remover borda */
+            background-color: #fbfefb; /* Cor de fundo */
+            color: #4CAF50;       /* Cor do texto */
+            cursor: pointer;    /* Cursor em forma de mão */
+            text-decoration: none;
+        }
+
+    }
